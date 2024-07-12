@@ -22,27 +22,33 @@ $routes->get('/', [Accueil::class, 'afficher']);
 $routes->get('admin/afficher', [Admin::class, 'afficher']);
 
 // Comptes
-$routes->get('compte/lister', [Compte::class, 'lister']);
 $routes->match(["get","post"],'compte/creer', [Compte::class, 'creer']);
 $routes->get('compte/connecter', [Compte::class, 'connecter']);
 $routes->post('compte/connecter', [Compte::class, 'connecter']);
 $routes->get('compte/deconnecter', [Compte::class, 'deconnecter']);
-$routes->get('compte/afficher_profil', [Compte::class, 'afficher_profil']); 
+$routes->get('compte/afficher_profil', [Compte::class, 'afficher_profil']);
+
+$routes->get('admin/compte/lister', [Compte::class, 'lister']);
+$routes->match(['get', 'post'], 'admin/compte/lister', [Compte::class, 'modifier_statut']);
 
 // Actualites
 $routes->get('accueil/afficher', [Actualite::class, 'lister']);
 $routes->get('actualite/afficher', [Actualite::class, 'afficher']);
 $routes->get('actualite/afficher/(:num)', [Actualite::class, 'afficher']);
 $routes->match(["get","post"],'actualite/creer', [Actualite::class, 'creer']);
+$routes->get('admin/actualite/lister', [Actualite::class, 'admin_lister']);
+$routes->match(["get","post"], '/admin/actualite/creer', [Actualite::class, 'admin_creer']);
 
 // Commentaires
 $routes->get('livre-dor/lister', [Commentaire::class, 'lister']);
+$routes->get('admin/tickets/lister', [Commentaire::class, 'admin_lister']);
+$routes->match(['get', 'post'], 'admin/tickets/lister', [Commentaire::class, 'supprimer_ticket']);
 
 // Oeuvres
 $routes->get('galerie/lister', [Oeuvre::class, 'lister']);
 $routes->get('galerie/afficher/(:segment)', [Oeuvre::class, 'afficher']);
 
-// Oeuvres
+// Exposants
 $routes->get('exposant/afficher/(:segment)', [Exposant::class, 'afficher']);
 
 // Bootstrap (Test)

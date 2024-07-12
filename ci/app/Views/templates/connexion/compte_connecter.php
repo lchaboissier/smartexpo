@@ -1,5 +1,3 @@
-<?= session()->getFlashdata('error') ?>
-
 <body class="bg-gradient-primary">
     <div class="container">
 
@@ -20,9 +18,22 @@
                                     </div>
                                     <?php
                                         $session = session();
-                                        $successMessage = $session->getFlashdata('info');
+                                        $successMessage = $session->getFlashdata('success');
+                                        $warningMessage = $session->getFlashdata('warning');
+                                        $dangerMessage = $session->getFlashdata('danger');
+                                        $infoMessage = $session->getFlashdata('info');
+                                        $errorMessage = $session->getFlashdata('error');
+                                        
                                         if ($successMessage) {
-                                            echo '<div class="alert alert-info text-center">' . $successMessage . '</div>';
+                                            echo '<div class="alert alert-success text-center">' . $successMessage . '</div>';
+                                        } elseif ($warningMessage) {
+                                            echo '<div class="alert alert-warning text-center">' . $warningMessage . '</div>';
+                                        } elseif ($dangerMessage) {
+                                            echo '<div class="alert alert-danger text-center">' . $errorMessage . '</div>';
+                                        } elseif ($infoMessage) {
+                                            echo '<div class="alert alert-info text-center">' . $infoMessage . '</div>';
+                                        } elseif ($errorMessage) {
+                                            echo '<div class="alert alert-danger text-center">' . $errorMessage . '</div>';
                                         }
                                     ?>
                                     <?php echo form_open('/compte/connecter', ['class' => 'user']); ?>

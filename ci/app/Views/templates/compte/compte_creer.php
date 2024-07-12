@@ -29,8 +29,8 @@
                                     <?= validation_show_error('cpt_motdepasse') ?>
                                 </div>
                                 <div class="form-group">
-                                    <label for="cpt_image">Image pour le profil : </label>
-                                    <input type="file" name="cpt_image">
+                                    <label for="pro_image">Image pour le profil : </label>
+                                    <input type="file" name="pro_image">
                                 </div>
                                 <input class="btn btn-primary btn-user btn-block" type="submit" name="submit" value="Créer un nouveau compte">
                             </form>

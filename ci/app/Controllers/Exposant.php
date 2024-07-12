@@ -18,7 +18,7 @@ class Exposant extends BaseController
     public function afficher($code)
     {
         $this->model = model(Db_model::class);
-
+        $data['page'] = "Page de l'exposant";
         $data['cfg'] = $this->model->get_configuration();
         $data['exposant'] = $this->model->get_exposant($code);
 

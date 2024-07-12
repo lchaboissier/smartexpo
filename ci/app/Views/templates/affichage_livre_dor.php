@@ -24,5 +24,5 @@
     <?php } else { ?>
         <p class="text-center">Aucun commentaire pour le moment.</p>
     <?php } ?>
-    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br />
 </div>

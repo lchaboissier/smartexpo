@@ -15,6 +15,7 @@ class Accueil extends BaseController
 	public function afficher()
 	{
 		$model = model(Db_model::class);
+		$data['page'] = "Accueil";
 		$data['titre'] = "Liste de tous les actualités";
 		$data['news'] = $model->get_all_actualite();
 		$data['cfg'] = $model->get_configuration();

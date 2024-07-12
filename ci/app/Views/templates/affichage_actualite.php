@@ -1,4 +1,4 @@
-<h1 class="text-center mt-4"><?php echo $titre; ?></h1>
+<h1 class="text-center mt-4"><?php echo $titre.' — '.$news->act_titre; ?></h1>
 
 <div class="container mt-4 text-center">
     <?php

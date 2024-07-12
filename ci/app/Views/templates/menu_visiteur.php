@@ -8,8 +8,6 @@
                 <!-- <li class="nav-item"><a class="nav-link" href="<?php echo base_url(); ?>index.php/bootstrap0/afficher">Test</a></li> -->
                 <li class="nav-item"><a class="nav-link" href="<?php echo base_url(); ?>index.php/galerie/lister">Galerie</a></li>
                 <li class="nav-item"><a class="nav-link" href="<?php echo base_url(); ?>index.php/livre-dor/lister">Livre d'or</a></li>
-                <li class="nav-item"><a class="nav-link" href="<?php echo base_url(); ?>index.php/compte/lister">Comptes</a></li>
-                <li class="nav-item"><a class="nav-link" href="<?php echo base_url(); ?>index.php/admin/afficher">Admin</a></li>
                 <li>|</li>
                 <li class="nav-item"><a class="nav-link" href="<?php echo base_url(); ?>index.php/compte/creer">Inscription</a></li>
                 <li class="nav-item"><a class="nav-link" href="<?php echo base_url(); ?>index.php/compte/connecter">Connexion</a></li>

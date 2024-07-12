@@ -17,8 +17,8 @@
 	<link rel="stylesheet" href="<?php echo base_url(); ?>bootstrap2/css/sb-admin-2.min.css">
 	<!-- Main css -->
 	<link rel="stylesheet" href="<?php echo base_url(); ?>bootstrap2/css/sb-admin-2.css">
-	<title>SmartExpo - Tableau de bord</title>
+	<title><?php echo $cfg->cfg_intitule.' - '.$page ?></title>
 
-	<title>Accueil</title>
+	<!-- <title>Accueil</title> -->
 </head>
 	

@@ -11281,3 +11281,11 @@ footer.sticky-footer .copyright {
 body.sidebar-toggled footer.sticky-footer {
   width: 100%;
 }
+
+.compte-actif {
+  background-color: #c1e4b9; /* Couleur de fond pour les comptes activés */
+}
+
+.compte-inactif {
+  background-color: #f5c7c6; /* Couleur de fond pour les comptes désactivés */
+}

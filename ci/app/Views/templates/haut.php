@@ -16,7 +16,7 @@
 	<!-- Core theme CSS (includes Bootstrap)-->
 	<link href="<?php echo base_url();?>bootstrap/css/styles.css" rel="stylesheet" />
 	
-	<title>Accueil</title>
+	<title><?php echo $cfg->cfg_intitule.' - '.$page ?></title>
 </head>
 
 <body id="page-top">

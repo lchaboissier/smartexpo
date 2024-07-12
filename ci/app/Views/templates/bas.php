@@ -26,6 +26,7 @@
 
 	<div class="copyright py-4 text-white text-center bg-black">
 		<div class="container"><small>&copy; L3 - 2024</small></div>
+		<div class="container"><small>Créé par Luca Chaboissier.</small></div>
 	</div>
 	<!-- jQuery Version -->
 	<script src="<?php echo base_url(); ?>bootstrap/js/jquery-3.7.1.min.js"></script>

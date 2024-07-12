@@ -18,6 +18,7 @@ class Oeuvre extends BaseController
     public function lister()
     {
         $this->model = model(Db_model::class);
+        $data['page'] = "Galerie des oeuvres";
         $data['cfg'] = $this->model->get_configuration();
         $data['titre'] = "Galerie des oeuvres";
         $data['oeuvres'] = $this->model->get_all_oeuvres();
@@ -30,7 +31,7 @@ class Oeuvre extends BaseController
     public function afficher($code)
     {
         $this->model = model(Db_model::class);
-
+        $data['page'] = "Oeuvre";
         $data['cfg'] = $this->model->get_configuration();
         $data['oeuvre'] = $this->model->get_oeuvre($code);
 
